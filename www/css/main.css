@@ -195,41 +195,55 @@ textarea {
    ========================================================================== */
 
 body { 
-    background: url(../img/woodgrain.jpg) repeat; 
+    background: url('../img/woodgrain.jpg') repeat; 
     font-family: "Helvetica", "Arial", sans-serif;
     height: 600px; 
     width: 888px; 
 }
 
-img { 
+#details img { 
     position: absolute; 
 }
-#title {
+#details #title {
     left: 17px;
     top: 25px;
     z-index: 2;
 }
-#description {
+#details #description {
     left: 259px;
     top: 67px;
     z-index: 1;
 }
-#date {
+#details #date {
     left: 525px;
     top: 9px;
 }
 
+#details #misc1 {
+	left: 450px;
+	bottom: 0px;
+}
+
+#details #misc2 {
+	/*left: 754px;*/
+	right: 0px;
+	bottom: 20px;
+}
+
 #invitation {
-    background-color: #fff;
+    background: url('../img/note.png') no-repeat;
     bottom: 0;
     left: 0;
-    padding: 27px 129px 29px 29px;
     position: absolute;
-    width: 579px;
+    padding: 17px 148px 17px 27px;
+    height: 207px;
+    width: 473px;
     z-index: 3;
+    font-size: 0.8em;
+    line-height: 1.7em;
 }
 #invitation h1 {
-    font-size: 30px;
+    font-size: 2.5em;
     margin-bottom: 15px;
 }
 #invitation a {
@@ -246,6 +260,9 @@ img {
     background-color: #f78b36;
 }
 
+#signup_dialog .error {
+	color: red;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
